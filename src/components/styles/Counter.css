@@ -1,0 +1,14 @@
+.Counter {
+    display: flex;
+    color: white;
+}
+
+.Counter div {
+    border-radius: 20%;
+    width: 20px;
+    height: 20px;
+}
+
+.Counter p {
+ margin: 0;
+}
