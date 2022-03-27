@@ -3,3 +3,18 @@
     flex-wrap: wrap;
     min-height: 100vh;
 }
+
+.shopIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.shopIconContainer i {
+    margin: 5px 5px 0 0;
+    border: solid 2px white;
+    padding: 5px;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+}

@@ -13,8 +13,7 @@ function Shop() {
   }
 
   return (
-    <div>
-      <h3>Hi Im Shopping cart</h3>  
+    <div> 
       <div className='sidebar-main-container row'>
           <Sidebar handleGenreClick={handleGenreClick}/>
           <Main allBooksData={booksData} currentGenre={genre}/>
