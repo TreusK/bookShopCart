@@ -1,45 +1,41 @@
+import covers from './coversData';
+
 const booksData = [
     //Fantasy
     {
         title: 'Harry Potter Set (1-7)',
         author: 'J.K. Rowling',
         price: '$40.87',
-        description: 'Now for the first time ever, J.K. Rowling’s seven bestselling Harry Potter books are available in a stunning paperback boxed set! The Harry Potter series has been hailed as “one for the ages” by Stephen King and “a spellbinding saga’ by USA Today. And most recently, The New York Times called Harry Potter and the Deathly Hallows the “fastest selling book in history.” This is the ultimate Harry Potter collection for Harry Potter fans of all ages!',
         genre: "Fantasy",
     },
     {
         title: 'The Hobbit',
         author: 'J. R. R. Tolkien',
         price: '$20',
-        description: "The journey through Middle-earth begins here with J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy.",
         genre: "Fantasy",
     },
     {
         title: 'The Last Unicorn',
         author: 'Peter S. Beagle',
         price: '$10.07',
-        description: "Experience one of the most enduring classics of the twentieth century and the book that The Atlantic has called 'one of the best fantasy novels ever'.",
         genre: "Fantasy",
     },
     {
         title: 'Ancient Sorceries and Other Weird Stories',
         author: 'Algernon Blackwood',
         price: '$14.72',
-        description: 'By turns bizarre, unsettling, spooky, and sublime, Ancient Sorceries and Other Weird Stories showcases nine incomparable stories from master conjuror Algernon Blackwood. ',
         genre: "Fantasy",
     },
     {
         title: 'A Journal of the Plague Year',
         author: 'Daniel Defoe',
         price: '$10.22',
-        description: "A Journal (1722) follows Defoe's fictional narrator as he traces the devastating progress of the plague through the streets of London. Here we see a city transformed: some of its streets suspiciously empty, some--with crosses on their doors--overwhelmingly full of the sounds and smells of human suffering. And every living citizen he meets has a horrifying story that demands to be heard.",
         genre: "Fantasy",
     },
     {
         title: 'The Hero and the Crown',
         author: 'Robin McKinley',
         price: '$8.87',
-        description: "Although she is the daughter of Damar's king, Aerin has never been accepted as full royalty. Both in and out of the royal court, people whisper the story of her mother, the witchwoman, who was said to have enspelled the king into marrying her to get an heir to rule Damar-then died of despair when she found she had borne a daughter instead of a son. But none of them, not even Aerin herself, can predict her future-for she is to be the true hero who will wield the power of the Blue Sword...",
         genre: "Fantasy",
     },
     //Romance
@@ -47,17 +43,199 @@ const booksData = [
         title: 'Mountains (Books 1-5)',
         author: 'P.D. Singer',
         price: '$25.87',
-        description: "Fresh out of college, Jake Landon’s heading to the mountains for a season as a forest ranger. A gap year before returning to school might give him enough time to sort out his residency and his sexuality - he’s deep in the closet and a complete rookie. Some crusty old partner who speaks three words a day won’t entice him.",
         genre: "Romance",
     },
     {
         title: 'The Highlander’s Pirate Lass - Brothers of Wolf Isle Series',
         author: 'Heather McCollum',
         price: '$25.87',
-        description: "Eliza Wentworth is no lady. After the notorious pirate Jandeau murdered her family, she vowed to spend the rest of her life at sea, saving others. She’d rather be firing cannons than embroidering pillows - or worse, bowing to the demands of a husband. But when she’s stranded on an island off the coast of Scotland, now she is the one in need of help. And that help comes not only from a man, but a man she struggles to resist.",
         genre: "Romance",
     },
-
+    {
+        title: 'The Fault in Our Stars',
+        author: 'John Green',
+        price: '$4.99',
+        genre: "Romance",
+    },
+    {
+        title: 'Red, White & Royal Blue',
+        author: 'Casey McQuiston',
+        price: '$6.99',
+        genre: "Romance",
+    },
+    {
+        title: 'Twilight (The Twilight Saga #1)',
+        author: 'Stephenie Meyer',
+        price: '$8.01',
+        genre: "Romance",
+    },
+    //Horror
+    {
+        title: 'The Shining',
+        author: 'Stephen King',
+        price: '$10.00',
+        genre: "Horror",
+    },
+    {
+        title: 'It',
+        author: 'Stephen King',
+        price: '$12.00',
+        genre: "Horror",
+    },
+    {
+        title: 'Dracula',
+        author: 'Bram Stoker',
+        price: '$15.00',
+        genre: "Horror",
+    },
+    {
+        title: 'The Tommyknockers',
+        author: 'Stephen King',
+        price: '$19.99',
+        genre: "Horror",
+    },
+    //History
+    {
+        title: 'Sapiens: A Brief History of Humankind',
+        author: 'Yuval Noah Harari',
+        price: '$8.99',
+        genre: "History",
+    },
+    {
+        title: 'Guns, Germs, and Steel: The Fates of Human Societies',
+        author: ' Jared Diamond',
+        price: '$4.99',
+        genre: "History",
+    },
+    {
+        title: '1776',
+        author: 'David McCullough',
+        price: '$5.55',
+        genre: "History",
+    },
+    {
+        title: 'The Rise and Fall of the Third Reich: A History of Nazi Germany',
+        author: 'William L. Shirer',
+        price: '$20.99',
+        genre: "History",
+    },
+    //Languages
+    {
+        title: 'Fluent Forever: How to Learn Any Language Fast and Never Forget It (Paperback)',
+        author: 'Gabriel Wyner',
+        price: '$2.99',
+        genre: "Languages",
+    },
+    {
+        title: 'The Mother Tongue: English and How It Got That Way',
+        author: 'Bill Bryson',
+        price: '$4.92',
+        genre: "Languages",
+    },
+    {
+        title: 'The Language Instinct: How the Mind Creates Language',
+        author: 'Steven Pinker',
+        price: '$12.00',
+        genre: "Languages",
+    },
+    {
+        title: 'Polyglot: How I Learn Languages',
+        author: 'Kató Lomb',
+        price: '$13.99',
+        genre: "Languages",
+    },
+    {
+        title: "Lingo: A Language Spotter's Guide to Europe",
+        author: 'Gaston Dorren',
+        price: '$12.99',
+        genre: "Languages",
+    },
+    {
+        title: 'Eats, Shoots & Leaves: The Zero Tolerance Approach to Punctuation',
+        author: 'Lynne Truss',
+        price: '$15.00',
+        genre: "Languages",
+    },
+    //Manga
+    {
+        title: 'Death Note, Vol. 1: Boredom',
+        author: 'Tsugumi Ohba',
+        price: '$5.00',
+        genre: "Manga",
+        img: covers.deathNote,
+    },
+    {
+        title: 'Attack on Titan, Vol. 1',
+        author: 'Hajime Isayama',
+        price: '$7.00',
+        genre: "Manga",
+        img: covers.titan,
+    },
+    {
+        title: 'Fullmetal Alchemist, Vol. 1',
+        author: 'Hiromu Arakawa',
+        price: '$4.00',
+        genre: "Manga",
+        img: covers.fma,
+    },
+    {
+        title: 'Black Butler, Vol. 1',
+        author: 'Yana Toboso',
+        price: '$5.00',
+        genre: "Manga",
+        img: covers.butler,
+    },
+    {
+        title: 'Vampire Knight, Vol. 1',
+        author: 'Matsuri Hino',
+        price: '$5.00',
+        genre: "Manga",
+        img: covers.vampireNight,
+    },
+    //Mystery
+    {
+        title: 'And Then There Were None',
+        author: 'Agatha Christie',
+        price: '$15.00',
+        genre: "Mystery",
+    },
+    {
+        title: 'The Girl with the Dragon Tattoo',
+        author: 'Stieg Larsson',
+        price: '$12.20',
+        genre: "Mystery",
+    },
+    {
+        title: 'The Da Vinci Code',
+        author: 'Dan Brown',
+        price: '$18.00',
+        genre: "Mystery",
+    },
+    //Cooking Books
+    {
+        title: 'Joy of Cooking',
+        author: 'Irma S. Rombauer',
+        price: '$11.00',
+        genre: "Cooking Books",
+    },
+    {
+        title: 'Veganomicon: The Ultimate Vegan Cookbook',
+        author: 'Isa Chandra Moskowitz',
+        price: '$13.00',
+        genre: "Cooking Books",
+    },
+    {
+        title: 'How to Cook Everything: Simple Recipes for Great Food',
+        author: 'Mark Bittman',
+        price: '$14.00',
+        genre: "Cooking Books",
+    },
+    {
+        title: 'The Smitten Kitchen Cookbook',
+        author: 'Deb Perelman',
+        price: '$16.00',
+        genre: "Cooking Books",
+    },
 ]
 
 export default booksData;

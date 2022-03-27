@@ -1,3 +1,24 @@
 .BookCard {
     width: 220px !important;
 }
+
+.BookCard img {
+    width: 100px;
+}
+
+.BookCard p {
+    margin: 0;
+}
+
+.BookCard .bookTitle {
+    font-weight: 700;
+}
+
+.BookCard em {
+    font-size: smaller;
+}
+
+.card, .card-action {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
