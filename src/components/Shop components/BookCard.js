@@ -30,7 +30,7 @@ function BookCard({book, helperAddToCart}) {
             <div className='BookCard col s12 offset-s3 m6 l3 center-align'>
                 <div className='card small'>
                     <div className="cardTop">
-                        {<img src={book.img} /> || <></>}
+                        {<img className='materialboxed' src={book.img} /> || <></>}
                     </div>
                     <div className="cardBottom">
                         <p className='bookTitle'>{book.title||'title'}</p>
