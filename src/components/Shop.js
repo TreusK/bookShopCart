@@ -2,7 +2,7 @@ import './styles/Shop.css';
 import React, {useState, setState} from 'react';
 import Sidebar from './Shop components/Sidebar';
 import Main from './Shop components/Main';
-import booksData from './books data/booksData'
+
 
 
 function Shop() {
@@ -16,7 +16,7 @@ function Shop() {
     <div> 
       <div className='sidebar-main-container row'>
           <Sidebar handleGenreClick={handleGenreClick}/>
-          <Main allBooksData={booksData} currentGenre={genre}/>
+          <Main currentGenre={genre}/>
       </div>
     </div>
   );

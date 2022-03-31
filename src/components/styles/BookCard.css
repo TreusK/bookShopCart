@@ -21,11 +21,17 @@
 .card, .card-action {
     padding-top: 5px !important;
     padding-bottom: 5px !important;
+    border-radius: 10px !important;
+}
+
+.card {
+    height: 350px !important;
 }
 
 .cardTop {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .material-placeholder {

@@ -1,3 +1,24 @@
 .Main {
     min-height: 90vh;
 }
+
+.paginationBtns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.paginationBtns a {
+    border: solid 2px rgb(78, 78, 243);
+    padding: 5px 10px;
+    background-color: aliceblue;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.paginationBtns a:hover {
+    background-color: aqua;
+    color: red;
+}
