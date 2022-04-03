@@ -44,6 +44,20 @@ const booksData = [
         genre: "Fantasy",
         img: covers.heroCrown,
     },
+    {
+        title: 'The Lightning Thief',
+        author: 'Rick Riordan',
+        price: '$8.00',
+        genre: "Fantasy",
+        img: covers.lightThief,
+    },
+    {
+        title: 'Six of Crows',
+        author: 'Leigh Bardugo',
+        price: '$12.00',
+        genre: "Fantasy",
+        img: covers.sixCrows,
+    },
     //Romance
     {
         title: 'Mountains (Books 1-5)',
@@ -217,6 +231,34 @@ const booksData = [
         genre: "Manga",
         img: covers.vampireNight,
     },
+    {
+        title: 'Inuyasha, Vol. 1',
+        author: 'Rumiko Takahashi',
+        price: '$3.00',
+        genre: "Manga",
+        img: covers.inuyasha,
+    },
+    {
+        title: 'Tsubasa: RESERVoir CHRoNiCLE, Vol. 1',
+        author: 'CLAMP',
+        price: '$5.00',
+        genre: "Manga",
+        img: covers.tsubasa,
+    },
+    {
+        title: 'Fruits Basket, Vol. 6',
+        author: 'Natsuki Takaya',
+        price: '$5.00',
+        genre: "Manga",
+        img: covers.fruits6,
+    },
+    {
+        title: 'Attack on Titan, Vol. 2',
+        author: 'Hajime Isayama',
+        price: '$7.00',
+        genre: "Manga",
+        img: covers.titan2,
+    },
     //Mystery
     {
         title: 'And Then There Were None',
@@ -271,4 +313,4 @@ const booksData = [
 ]
 
 export default booksData;
-    
+

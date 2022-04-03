@@ -1,7 +1,7 @@
 #cartTransparentContainer {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     top: 0;
     left: 0;
@@ -12,7 +12,44 @@
 }
 
 #cartContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
     width: 500px;
-    border: solid 2pc black;
+    min-height: 100vh;
+    border: solid 2px black;
     background-color: antiquewhite;
+}
+
+#shoppingCartInnerScrollableContainer {
+    background-color: rgb(128, 228, 183);
+    overflow-y: auto;
+    flex-grow: 2;
+    height: 0;
+}
+
+.cartItem {
+    display: flex;
+    border-bottom: solid 2px red;
+    justify-content: space-between;
+}
+
+.cartItem img {
+    width: 100px;
+}
+
+.cartItem .left {
+    flex: 1;
+}
+
+.cartItem .middle {
+    flex: 2;
+}
+
+.cartItem .right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

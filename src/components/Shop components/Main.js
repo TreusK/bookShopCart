@@ -12,6 +12,7 @@ function Main({currentGenre}) {
   const [books, setBooks] = useState(booksData)
 
   const [shoppingCart, setShoppingCart] = useState([]);
+            
   const [showCart, setShowCart] = useState(false);
 
   const [pageNumber, setPageNumber] = useState(0);
@@ -21,13 +22,13 @@ function Main({currentGenre}) {
 
 
   let displayBooks = books
-    .filter(elem => (elem.genre == currentGenre) || currentGenre == 'All')
+    .filter(elem => (elem.genre === currentGenre) || currentGenre === 'All')
     .slice(pagesVisited, pagesVisited + booksPerPage)
     .map((elem, index) => {
        return (<BookCard book={elem} key={index} helperAddToCart={helperAddToCart}/>)
     });
     
-  let pageCount = Math.ceil(books.filter(elem => (elem.genre == currentGenre) || currentGenre == 'All').length / booksPerPage);
+  let pageCount = Math.ceil(books.filter(elem => (elem.genre === currentGenre) || currentGenre === 'All').length / booksPerPage);
   
 
   useEffect(() => {
@@ -43,14 +44,14 @@ function Main({currentGenre}) {
   function helperAddToCart(book, num) {
     let isTheBookAlreadyThere = false;
     shoppingCart.map(elem => {
-      if (elem.title == book.title) {isTheBookAlreadyThere = true};
+      if (elem.title === book.title) {isTheBookAlreadyThere = true};
     })
 
-    if(isTheBookAlreadyThere == false && num != 0) {
+    if(isTheBookAlreadyThere === false && num !== 0) {
       book.amount = num;
       setShoppingCart(oldCart => oldCart.concat([book]));
       alert("You've added " + num + " copies of " + book.title + " to your shopping cart.");
-    } else if(isTheBookAlreadyThere  && num != 0) {
+    } else if(isTheBookAlreadyThere  && num !== 0) {
       alert("That product is already in the cart!!");
     }
   }
@@ -65,9 +66,16 @@ function Main({currentGenre}) {
     setPageNumber(selected);
   }
 
+  function handleRemove(e) {
+    let index = e.target.classList[0].slice(6);
+    let cartCopy = [...shoppingCart];
+    cartCopy.splice(+index, 1);
+    setShoppingCart(cartCopy);
+  }
+
   return (
     <div className="Main col s12 m9 l10 indigo row center-align">
-      {showCart && <ShoppingCart booksInCart={shoppingCart} hideShoppingCart={hideShoppingCart}/>}
+      {showCart && <ShoppingCart shoppingCart={shoppingCart} handleRemove={handleRemove} hideShoppingCart={hideShoppingCart}/>}
       <div className='shopIconContainer indigo'>
         <i className="material-icons" onClick={() => setShowCart(true)}>shopping_cart</i>  
       </div> 

@@ -4,6 +4,10 @@ import deathNote from './covers/manga/deathNote.jpg';
 import fma from './covers/manga/fma.jpg';
 import titan from './covers/manga/titan.jpg';
 import vampireNight from './covers/manga/vampireNight.jpg';
+import inuyasha from './covers/manga/inuyasha.jpg';
+import tsubasa from './covers/manga/tsubasa.jpg';
+import fruits6 from './covers/manga/fruits6.jpg';
+import titan2 from './covers/manga/titan2.jpg';
 //Romance
 import faultStars from './covers/romance/faultStars.jpg';
 import highlanderPirate from './covers/romance/highlanderPirate.png';
@@ -17,6 +21,8 @@ import heroCrown from './covers/fantasy/heroCrown.jpg';
 import hobbit from './covers/fantasy/hobbit.jpg';
 import unicorn from './covers/fantasy/unicorn.jpg';
 import weird from './covers/fantasy/weird.jpg';
+import lightThief from './covers/fantasy/lightThief.jpg';
+import sixCrows from './covers/fantasy/sixCrows.jpg';
 //Horror
 import shining from './covers/horror/shining.jpg';
 import it from './covers/horror/it.jpg';
@@ -46,9 +52,9 @@ import veganomicon from './covers/cooking/veganomicon.jpg';
 
 
 
-const covers = {butler, deathNote, fma, titan, vampireNight, 
+const covers = {butler, deathNote, fma, titan, vampireNight, titan2, fruits6, inuyasha, tsubasa, 
                 faultStars, highlanderPirate, mountainsBundle, redwhiteloyal, twilight, 
-                harryPotter, plague, heroCrown, hobbit, unicorn, weird,
+                harryPotter, plague, heroCrown, hobbit, unicorn, weird, lightThief, sixCrows, 
                 shining, it, dracula, tommy, 
                 sapiens, guns, a1776, riseFall,
                 polyglot, fluentForever, motherTongue, languageInstinct, lingo, eatShoots,
