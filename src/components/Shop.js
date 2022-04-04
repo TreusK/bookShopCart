@@ -13,11 +13,9 @@ function Shop() {
   }
 
   return (
-    <div> 
-      <div className='sidebar-main-container row'>
-          <Sidebar handleGenreClick={handleGenreClick}/>
-          <Main currentGenre={genre}/>
-      </div>
+    <div className='sidebar-main-container row'>
+        <Sidebar handleGenreClick={handleGenreClick}/>
+        <Main currentGenre={genre}/>
     </div>
   );
 }

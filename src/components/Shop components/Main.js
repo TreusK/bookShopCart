@@ -8,14 +8,15 @@ import M from 'materialize-css';
 
 
 function Main({currentGenre}) {
-
+  //books state that keeps the booksData object
   const [books, setBooks] = useState(booksData)
-
+  //state that keeps the items in the cart
   const [shoppingCart, setShoppingCart] = useState([]);
-            
+  //state that hides or shows the shoppign cart component           
   const [showCart, setShowCart] = useState(false);
-
+  //react paginate state
   const [pageNumber, setPageNumber] = useState(0);
+
 
   const booksPerPage = 6;
   const pagesVisited = pageNumber * booksPerPage;
@@ -39,7 +40,6 @@ function Main({currentGenre}) {
   useEffect(() => {
     setPageNumber(0);
   }, [currentGenre])
-
 
   function helperAddToCart(book, num) {
     let isTheBookAlreadyThere = false;
@@ -88,6 +88,7 @@ function Main({currentGenre}) {
         containerClassName={'paginationBtns'}
         previousLinkClassName={'previousBtn'}
         nextLinkClassName={'nextBtn'}
+        forcePage={pageNumber}
       />
     </div>
   );
