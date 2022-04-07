@@ -19,15 +19,16 @@ function ShoppingCart({shoppingCart, hideShoppingCart, handleRemove}) {
                         <div className='left'>
                             <img src={elem.img}/>
                         </div>
-                        <div className='middle'>
+                        <div className='middle left-align'>
                             <div>
                                 <p>{elem.title}</p>
-                                <p>Individual Price: {elem.price}</p>
+                                {(elem.amount > 1) ? <p>{elem.amount} items</p> : <p>{elem.amount} item</p> }
+                                <p>Solo Price: {elem.price}</p>
                                 <p>Total Price: ${+elem.price.slice(1) * elem.amount}</p>
                             </div>
                         </div>
                         <div className='right'>
-                            <button className={'remove'+index} onClick={handleRemove}>Remove</button>
+                            <button className={'remove'+index+ ' btn red lighten-1'} onClick={handleRemove}>Remove</button>
                         </div>
                     </div>    
                 )}

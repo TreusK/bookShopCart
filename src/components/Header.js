@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 function Header() {
   return (
     <div className='Header'>
-         <nav className='indigo accent-4'>
-            <div className="nav-wrapper">
+         <nav className='red darken-4'>
+            <div className="nav-wrapper center-align">
             <a href="#" className="brand-logo">BookShop</a>
             <ul id="nav-mobile" className="right">
                 <li><Link to='/'>Home</Link></li>

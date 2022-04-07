@@ -1,6 +1,96 @@
+#topContainer {
+    display: flex;
+    justify-content: center;
+}
+
 #topImage {
-    background-image: url('../Shop\ components/manBooks.jpg');
+    background-image: url('../Shop\ components/booksBg.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
+    height: 390px;
+    width: 840px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#empty {
+    flex: 1;
+}
+
+#specialOffer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+}
+
+#specialOffer p {
+    margin: 0;
+}
+
+#specialOffer p:nth-child(1) {
+    font-size: smaller;
+}
+#specialOffer p:nth-child(2) {
+    font-size: xx-large;
+    
+}
+#specialOffer p:nth-child(3) {
+    font-size: larger;
+}
+
+#specialOffer button {
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+
+
+#whyUsCards {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 60px;
+}
+
+@media screen and (max-width: 800px) {
+    #whyUsCards {
+      flex-wrap: wrap;
+    }
+
+    .whyUsSingle {
+        border-bottom: 2px solid #64b5f6;
+        padding-bottom: 10px;
+    }
+}
+
+.whyUsSingle {
+    display: flex;
+    width: 250px;
+    border-left: 2px solid #64b5f6;
+    padding-left: 10px;
+}
+
+.whyUsIconContainer {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.whyUsIconContainer i {
+    font-size: 30px !important;
+    color: #1565c0;
+}
+
+button a {
+    color: white;
+}
+
+button a:active {
+    color: white;
+}
+
+.Home {
+    height: 100%;
 }

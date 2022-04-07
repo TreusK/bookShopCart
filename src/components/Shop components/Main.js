@@ -74,9 +74,9 @@ function Main({currentGenre}) {
   }
 
   return (
-    <div className="Main col s12 m9 l10 indigo row center-align">
+    <div className="Main col s12 m9 l10 grey lighten-2 row center-align">
       {showCart && <ShoppingCart shoppingCart={shoppingCart} handleRemove={handleRemove} hideShoppingCart={hideShoppingCart}/>}
-      <div className='shopIconContainer indigo'>
+      <div className='shopIconContainer grey lighten-2'>
         <i className="material-icons" onClick={() => setShowCart(true)}>shopping_cart</i>  
       </div> 
       {displayBooks}

@@ -11,14 +11,14 @@
 }
 
 .paginationBtns a {
-    border: solid 2px rgb(78, 78, 243);
+    border: solid 2px #8d6e63;
     padding: 5px 10px;
     background-color: aliceblue;
     user-select: none;
     border-radius: 5px;
+    color: #212121;
 }
 
 .paginationBtns a:hover {
-    background-color: aqua;
-    color: red;
+    background-color: #8d6e63;
 }
