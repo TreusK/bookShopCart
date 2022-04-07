@@ -10,10 +10,10 @@ function ShoppingCart({shoppingCart, hideShoppingCart, handleRemove}) {
     return(
         <div id='cartTransparentContainer' onClick={hideShoppingCart}>
             <div id='cartContainer'>
-                <h2>Your Shopping Cart</h2>
+                <h3>Your Shopping Cart</h3>
                 <div id='shoppingCartInnerScrollableContainer'>
                 {(shoppingCart.length == 0) 
-                    ? <h3>Your Cart Is Empty</h3>
+                    ? <h4>Your Cart Is Empty</h4>
                     : shoppingCart.map((elem, index) => 
                     <div className="cartItem" key={'key'+index}>
                         <div className='left'>
@@ -33,7 +33,7 @@ function ShoppingCart({shoppingCart, hideShoppingCart, handleRemove}) {
                     </div>    
                 )}
                 <div className='allBooksTotal'>
-                    <h2>Total: {currency(allTotal).format() || '$0'}</h2>
+                    <h3>Total: {currency(allTotal).format() || '$0'}</h3>
                     <button className='btn'>Buy</button>
                 </div>
                 </div>

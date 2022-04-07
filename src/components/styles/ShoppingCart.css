@@ -29,6 +29,22 @@
     height: 0;
 }
 
+@media screen and (max-width: 500px) {
+    #cartContainer {
+      width: 380px;
+    }
+}
+@media screen and (max-width: 350px) {
+    #cartContainer {
+      width: 200px;
+    }
+
+    .cartItem {
+        flex-direction: column;
+    }
+}
+
+
 .cartItem {
     display: flex;
     border-bottom: solid 1px #5d4037;
